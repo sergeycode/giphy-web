@@ -1,13 +1,13 @@
 import { Grid, Image, Box } from "@chakra-ui/react";
+import { Gif } from "../types/Gif";
 
-// set the type of gifs to any since we don't know the final shape of the data
 export default function ListImages({
   search,
   gifs,
   titlePosition,
 }: {
   search: string;
-  gifs: any;
+  gifs: Gif[];
   titlePosition: string;
 }) {
   return (
@@ -18,7 +18,7 @@ export default function ListImages({
       gap={3}
       mt={6}
     >
-      {gifs.map((gif: any) => (
+      {gifs.map((gif) => (
         <Box
           position="relative"
           key={gif.id}
