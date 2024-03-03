@@ -14,7 +14,7 @@ export default function Navigation({
   totalPages,
 }: NavigationProps) {
   return (
-    <HStack spacing={5} mt={20}>
+    <HStack spacing={5} mt={10}>
       <Button onClick={onPrev} isDisabled={currentPage <= 1}>
         Previous
       </Button>

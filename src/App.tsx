@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChakraProvider, Container, theme } from "@chakra-ui/react";
+import { ChakraProvider, Container, Heading, theme } from "@chakra-ui/react";
 import ImageSearch from "./components/ImageSearch";
 import ListImages from "./components/ListImages";
 import Navigation from "./components/Navigation";
@@ -40,7 +40,8 @@ export const App = () => {
 
   return (
     <ChakraProvider theme={theme}>
-      <Container mt="100px">
+      <Container mt={4}>
+        <Heading>Giphy Search</Heading>
         <ImageSearch
           search={search}
           setSearch={setSearch}
